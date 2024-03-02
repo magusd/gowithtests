@@ -8,3 +8,7 @@ CMD+OPTION+B -> go to declaration
 # Go Docs
 
 godoc -http=:6060
+
+# Benchmark
+
+go test -v -bench=. ./...
