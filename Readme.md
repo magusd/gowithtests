@@ -44,3 +44,13 @@ go build -ldflags "-w -s"
 ```bash
 GOOS="linux" GOARCH="amd64" go build hello.go
 ```
+
+# Errors
+
+```bash
+go install github.com/kisielk/errcheck@latest
+#single directory
+errcheck .
+#recursive 
+# todo bash script running errcheck recursively
+```

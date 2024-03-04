@@ -16,13 +16,13 @@ func TestAdder(t *testing.T) {
 	})
 }
 
-func ExampleAdd_1() {
+func ExampleAdd_first() {
 	sum := Add(1, 6)
 	fmt.Println(sum)
 	//Output: 7
 }
 
-func ExampleAdd_2() {
+func ExampleAdd_second() {
 	sum := Add(1, 5)
 	fmt.Println(sum)
 	// Output: 6

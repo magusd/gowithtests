@@ -1,6 +1,7 @@
 package hello
 
 import (
+	"fmt"
 	"testing"
 )
 
@@ -32,4 +33,9 @@ func assertCorrectMessage(t testing.TB, got string, want string) {
 	if got != want {
 		t.Errorf("got %s, want %s", got, want)
 	}
+}
+
+func ExampleHello() {
+	fmt.Println(Hello("Lobs", ""))
+	//Output: Hello, Lobs!
 }

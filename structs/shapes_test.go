@@ -1,6 +1,9 @@
 package structs
 
-import "testing"
+import (
+	"fmt"
+	"testing"
+)
 
 func TestPerimeter(t *testing.T) {
 	perimeterTests := []struct {
@@ -35,4 +38,16 @@ func TestArea(t *testing.T) {
 			t.Errorf("failed to calculate the area of %#v, got %g, want %g", tt.shape, got, tt.hasArea)
 		}
 	}
+}
+
+func ExampleRectangle_Area() {
+	r := Rectangle{10.0, 20.0}
+	fmt.Println(r.Area())
+	//Output: 200
+}
+
+func ExampleRectangle_Perimeter() {
+	r := Rectangle{10.0, 20.0}
+	fmt.Println(r.Perimeter())
+	//Output: 60
 }
